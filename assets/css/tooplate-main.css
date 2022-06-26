@@ -300,15 +300,15 @@ nav a::before {
 
 }
 .slides .slide:nth-child(2) {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/inatec.jpg);
   background-position: fixed;
 }
 .slides .slide:nth-child(3) {
-  background-image: url(../images/gallery-bg.jpg);
+  background-image: url(../images/sekul1.jpg);
   background-position: fixed;
 }
 .slides .slide:nth-child(4) {
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/kiw.jpg);
   background-position: fixed;
 }
 
@@ -348,13 +348,13 @@ nav a::before {
   overflow: hidden;
 }
 #image-slider ul li:nth-child(1) {
-  background-image: url(../images/sekul4.jpg);
+  background-image: url(../images/sekul8.jpg);
 }
 #image-slider ul li:nth-child(2) {
   background-image: url(../images/guru.jpeg);
 }
 #image-slider ul li:nth-child(3) {
-  background-image: url(../images/w2.jpg);
+  background-image: url(../images/kiw2.jpg);
 }
 #image-slider ul li.active-img{
   left: 0;
@@ -760,5 +760,6 @@ nav a::before {
     margin-top: 0px;
     margin-bottom: 20px;
   }
+  
 
 }
