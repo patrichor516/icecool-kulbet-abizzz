@@ -301,7 +301,21 @@ nav a::before {
 }
 .slides .slide:nth-child(2) {
   background-image: url(../images/inatec.jpg);
-  background-position: fixed;
+  animation: slide 20s infinite;
+}
+@keyframes slide {
+  25%{
+    background-image: url(../images/inatec.jpg);
+  }
+  50%{
+    background-image: url(../images/inatec1.jpg);
+  }
+  75%{
+    background-image: url(../images/inatec2.jpg);
+  }
+  100%{
+    background-image: url(../images/inatec3.jpg);
+  }
 }
 .slides .slide:nth-child(3) {
   background-image: url(../images/sekul1.jpg);
@@ -470,7 +484,7 @@ nav a::before {
   width: 585px;
   text-align: left;
   display: inline-block;
-  background: #fff;
+  background: rgba(0,0,0,0.9);
   margin-right: 30px;
   padding: 60px;
 }
@@ -478,17 +492,17 @@ nav a::before {
   font-size: 29px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #1e1e1e;
+  color: white;
   margin-top: 0px;
 }
 .tabs-content span {
   font-size: 15px;
-  color: #7a7a7a;
+  color: whitesmoke;
   text-transform: uppercase;
 }
 .tabs-content p {
   font-size: 14px;
-  color: #7a7a7a;
+  color: whitesmoke;
   margin-top: 30px;
   margin-bottom: 0px;
 }
@@ -508,7 +522,9 @@ nav a::before {
   text-align: left;
 }
 .featured-item img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 .featured-item .down-content {
   background-color: #fff;
@@ -558,22 +574,130 @@ nav a::before {
   height: 100%;
 	transform: translateY(-140%);
 }
-#contact {
+
+.container {
+  
+  display: flex;
+  flex-direction: column;
+  
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: #11a5df2b; */
+  width: 80vw;
+  padding: 100px;
+  background-image: url();
+  margin-top: 80px;
+  margin-right: 140px;
+}
+
+h2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h5 {
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-shadow: 0 0 15px rgb(46, 119, 196);
+  
+  color: white;
+  border-radius: 5px;
+  padding: 7px;
+  background: white;
+
+}
+
+.details {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background:rgba(0,0,0,0.9);
+  color: white;
+  border-radius: 5px;
+  padding: 7px;
+  box-shadow: 0 0 15px rgb(46, 119, 196);
+
+}
+.contact-items{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  /* margin-left: 5px; */
+}
+.contact-items-wrapper{
+  padding: 25px;
+  background-image: url("assets/images/gua.jpg");
+}
+
+.details h3 {
   text-align: center;
-  margin: 0 auto;
-  max-width: 750px;
-  margin-bottom: 100px;
-  padding: 40px;
+}
+
+.details p {
+  font-size: 15px;
+  margin-left: 15px;
+  
+}
+
+.details p a{
+color: white;
+}
+.details p a:hover{
+color:  white;
+}
+
+.material-icons{
+  width: 12px;
+  margin: 5px;
+  background-color:white ;
+}
+
+input {
+  margin: 5px 15px;
+  height: 25px;
+  background-color: rgba(214, 200, 200, 0.9);
+}
+
+textarea {
+  height: 150px;
+  margin: 5px 15px;
+  background-color: rgba(204, 196, 196, 0.9);
+}
+
+button {
+  margin: 5px 15px;
+  width: 80px;
+  background: #0069f7;
+  padding: 3px 10px;
+  border: 0;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.9)
+  
+}
+
+.y{
+  overflow: hidden;
   background-color: rgba(0,0,0,0.9);
+  padding: 20px 400px 20px 400px;
+  box-shadow: 0 0 15px rgb(46, 119, 196);
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  
 }
-#contact h2 {
-  font-size: 29px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #fff;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
+
+
 #contact input,
 #contact textarea {
   padding-left: 15px;
@@ -658,7 +782,7 @@ nav a::before {
     font-weight: 900;
     color: #111;
     display: inline-block;
-    text-align: center;
+    
     background-color: #faf5b2;
   }
   nav {
